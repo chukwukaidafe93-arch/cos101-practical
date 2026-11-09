@@ -1,0 +1,281 @@
+for count in range(5):
+    print("Welcome to Cos 101")
+
+print("Learning is fun")
+
+# Display numbers from 0 to 4
+for number in range(5):
+    print(number)
+
+# Display student numbers from 1 to 10
+for StudentNumber in range(1,11):
+    print(f"Student {StudentNumber}")
+
+# range(start, stop, step)
+for number in range(3,13,3):
+    print(number)
+    # Display a multiplication table from 1 to 12
+number = int(input("Enter a whole number: "))
+print()
+
+print(f"MULTIPLICATION TABLE FOR {number}")
+
+for multiplier in range(1,13):
+    result = number * multiplier
+    print(f"{number} * {multiplier} = {result}")
+
+print()
+
+# Count
+count = 0
+count = count + 1
+count = count + 4
+
+print(count)
+
+print()
+
+number = int(input("Enter number:"))
+
+if number <= 0:
+    print("Number cannot be zero or negative!")
+elif number == 1:
+    print("Number")
+    # Display several number sequences using range()
+
+print("Number from 1 to 5:")
+for number in range(1,6):
+    print(number)
+
+print()
+
+print("Even numbers from 2 to 10:")
+for number in range(2,11,2):
+    print(number)
+
+print()
+
+print("Countdown from 5 to 1:")
+for number in range(5,0,-1):
+    print(number)
+
+print()
+
+for number in range(1,4):
+    print(number*2)
+
+print()
+
+# Display the 12 times table
+for number in range(1,13):
+    print(number*12)
+    student_name = input("Enter the student's name: ")
+
+coursework = float(input("Enter coursework score out of 30: "))
+
+examination = float(input("Enter examination score out of 70: "))
+
+if coursework < 0 or coursework > 30:
+    print("Invalid coursework score.")
+
+elif examination < 0 or examination > 70:
+    print("Invalid examination score.")
+
+else:
+    total = coursework + examination
+
+    if total >= 70:
+        grade = "A"
+    elif total >= 60:
+        grade = "B"
+    elif total >= 50:
+        grade = "C"
+    elif total >= 45:
+        grade = "D"
+    elif total >= 40:
+        grade = "E"
+    else:
+        grade = "F"
+
+    if total >= 50:
+        decision = "Pass"
+    else:
+        decision = "Resit required"
+
+    print()
+    print("STUDENT RESULT SUMMARY")
+    print("======================")
+    print(f"Name: {student_name}")
+    print(f"Coursework: {coursework:.2f} / 30")
+    print(f"Examination: {examination:.2f} / 70")
+    print(f"Total: {total:.2f} / 100")
+    print(f"Grade: {grade}")
+    print(f"Decision: {decision}")
+    student_name = input("Enter the student's name: ")
+
+score = float(input("Enter the score from 0 to 100: "))
+
+if score < 0 or score > 100:
+    print("Invalid score. The score must be between 0 and 100.")
+
+else:
+    if score >= 70:
+        grade = "A"
+    elif score >= 60:
+        grade = "B"
+    elif score >= 50:
+        grade = "C"
+    elif score >= 45:
+        grade = "D"
+    elif score >= 40:
+        grade = "E"
+    else:
+        grade = "F"
+
+    print()
+    print("STUDENT RESULT")
+    print("================")
+    print(f"Name: {student_name}")
+    print(f"Score: {score:.2f}")
+    print(f"Grade: {grade}")
+    customer_name = input("Enter the customer's name: ")
+
+energy_kwh = float(input("Enter energy consumed in kWh: "))
+
+if energy_kwh < 0:
+    print("Invalid consumption. Energy cannot be negative.")
+
+elif energy_kwh <= 50:
+    bill = energy_kwh * 50
+
+elif energy_kwh <= 150:
+    bill = (50 * 50) + ((energy_kwh - 50) * 75)
+
+else:
+    bill = (
+        (50 * 50)
+        + (100 * 75)
+        + ((energy_kwh - 150) * 100)
+    )
+
+    print()
+    print("ELECTRICITY BILL")
+    print("================")
+    print("Customer:", customer_name)
+    print(f"Energy consumed: {energy_kwh:.2f} kWh")
+    print(f"Amount payable: NGN {bill:.2f}")
+    print("STUDENT WEEKLY EXPENSE CALCULATOR")
+
+# INPUT
+student_name = input("Enter student name: ")
+
+daily_transport_cost = float(input("Enter daily transport cost (NGN): "))
+
+daily_feeding_cost = float(input("Enter daily feeding cost (NGN): "))
+
+days_on_campus = int(input("Enter number of days on campus: "))
+
+other_expenses = float(input("Enter other weekly expenses (NGN): "))
+
+print()
+
+# PROCESS
+transport_total = daily_transport_cost * days_on_campus
+
+feeding_total = daily_feeding_cost * days_on_campus
+
+weekly_total = transport_total + feeding_total + other_expenses
+
+# OUTPUT
+print("WEEKLY EXPENSE SUMMARY")
+
+print("Student:", student_name)
+
+print(f"Transport total: NGN {transport_total:.2f}")
+
+print(f"Feeding total: NGN {feeding_total:.2f}")
+
+print(f"Other expenses: NGN {other_expenses:.2f}")
+
+print(f"Weekly total: NGN {weekly_total:.2f}")
+student_name = str(input("Type student name: "))
+
+item_name = input("Type the item's name: ")
+
+quantity = int(input("Type the quantity of the item: "))
+
+unit_price = float(input("Type the cost of the item: "))
+
+total_cost = quantity * unit_price
+
+print()
+
+print("Item:", item_name)
+
+print("Quantity:", quantity)
+
+print("Unit price:", unit_price, "naira")
+
+print("Total cost:", total_cost, "naira")
+student_name = input("Enter your full name: ")
+
+matriculation_number = input("Enter your matriculation number: ")
+
+programme = input("Enter your programme: ")
+
+print()
+
+print("STUDENT PROFILE")
+
+print("================")
+
+print("Name:", student_name)
+
+print("Matriculation number:", matriculation_number)
+
+print("Programme:", programme)
+
+print("Level: 100")
+print("6+4")
+
+print(6+4)
+
+print("Answer:", 6+4)
+length = 8
+
+breadth = 4
+
+area = length * breadth
+
+print(area, "metres square")
+quantity = 4
+
+UnitPrice = 250
+
+PurchaseTotal = quantity * UnitPrice
+
+print("Total cost:", PurchaseTotal)
+print("PERSONAL INTRODUCTION")
+
+print("NAME: UDOH MFONISO MBUOTIDEM")
+
+print("MATRIC NO: VUG/SEN/26/16031")
+
+print("PROGRAMME: SOFTWARE ENGINEERING")
+
+print("LEVEL: 100 level")
+
+print()
+
+print("REASON OF STUDY: I am learning programming because i want to solve problems")
+rows = 6
+
+chairs_per_row = 8
+
+total_chairs = rows * chairs_per_row
+
+print("Number of rows:", rows)
+
+print("Chairs per row:", chairs_per_row)
+
+print("Total number of chairs:", total_chairs)
